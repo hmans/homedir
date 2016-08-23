@@ -1,0 +1,7 @@
+set line-graphics = yes
+
+# keybindings
+bind generic F !git fetch
+bind generic P !git push
+bind generic c !git checkout %(commit)
+#bind generic p !%(commit) | pbcopy

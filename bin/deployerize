@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# A "cheap man's CI" shortcut. Runs your project's tests,
+# pushes your changes and finally deploys your application.
+# If any of the steps fail, execution is cancelled.
+#
+
+rake && git push && bundle exec cap deploy

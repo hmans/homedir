@@ -1,0 +1,2 @@
+#!/bin/bash
+ping dresden.mans.de | awk '{"date" | getline date ; print $0, "\t\t" date ; close("date")}'

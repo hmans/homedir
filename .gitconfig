@@ -1,0 +1,72 @@
+# User information. Replace with your own data, obviously.
+#
+[user]
+  name = Hendrik Mans
+  email = hendrik@mans.de
+
+# Automatically track branches with the same name
+#
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
+
+# Push the current branch as the default behaviour
+#
+[push]
+  default = current
+
+# Include a summary of changes in merge commit messages.
+#
+[merge]
+  summary = true
+	tool = opendiff
+  defaultToUpstream = true
+
+# Color configuration.
+#
+[color]
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+# Whitespace handliong
+#
+[core]
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	editor = /usr/bin/vim
+
+# Useful aliases
+#
+[alias]
+  st = status -sb
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  dc = diff --cached
+	lol = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ls = ls-files
+	springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
+
+[mergetool]
+	keepBackup = true
+
+[git-up "bundler"]
+	check = true
+	autoinstall = true
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
