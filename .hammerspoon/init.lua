@@ -7,6 +7,7 @@ hs.window.animationDuration = 0
 --- padding to apply to all resized windows
 padding = 3
 
+
 ---
 --- Window management
 ---
@@ -39,6 +40,11 @@ end)
 hs.hotkey.bind(mash, "Down", function()
   movewindow(hs.window.focusedWindow(), 0, 0.5, 1, 0.5)
 end)
+
+hs.hotkey.bind(mash, "Space", function()
+  movewindow(hs.window.focusedWindow(), 0, 0, 1, 1)
+end)
+
 
 ---
 --- Caffeination
