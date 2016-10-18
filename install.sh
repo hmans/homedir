@@ -21,6 +21,6 @@ install () {
 
 shopt -s dotglob extglob
 
-for F in !(README.markdown|install.sh|.git|.gitmodules|.gitignore|.DS_Store); do
+for F in !(.|..|README.markdown|install.sh|.git|.gitmodules|.gitignore|.DS_Store); do
   install ${F}
 done
