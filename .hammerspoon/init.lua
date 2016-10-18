@@ -56,12 +56,11 @@ function setCaffeineDisplay(state)
   caffeine:setTitle(state and "☕" or "💤")
 end
 
-function caffeineClicked()
-  setCaffeineDisplay(hs.caffeinate.toggle("displayIdle"))
-end
-
 if caffeine then
-  caffeine:setClickCallback(caffeineClicked)
+  caffeine:setClickCallback(function()
+    setCaffeineDisplay(hs.caffeinate.toggle("displayIdle"))
+  end)
+
   setCaffeineDisplay(hs.caffeinate.get("displayIdle"))
 end
 
