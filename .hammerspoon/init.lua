@@ -53,11 +53,7 @@ end)
 local caffeine = hs.menubar.new()
 
 function setCaffeineDisplay(state)
-  if state then
-    caffeine:setTitle("AWAKE")
-  else
-    caffeine:setTitle("SLEEPY")
-  end
+  caffeine:setTitle(state and "☕" or "💤")
 end
 
 function caffeineClicked()
