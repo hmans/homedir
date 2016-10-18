@@ -12,37 +12,47 @@ padding = 3
 --- Window management
 ---
 
-function movewindow(win, rx, ry, rw, rh)
-  local f = win:frame()
-  local screen = win:screen()
-  local max = screen:frame()
+local wm = {}
 
-  f.x = (max.x + padding) + (rx * max.w)
-  f.y = (max.y + padding) + (ry * max.h)
-  f.w = max.w * rw - 2 * padding
-  f.h = max.h * rh - 2 * padding
+function wm.moveto(win, x, y, w, h)
+  local f = win:frame()
+
+  f.x = x
+  f.y = y
+  f.w = w
+  f.h = h
 
   win:setFrame(f)
 end
 
+function wm.movetoratio(win, rx, ry, rw, rh)
+  local max = win:screen():frame()
+
+  wm.moveto(win,
+    (max.x + padding) + (rx * max.w),
+    (max.y + padding) + (ry * max.h),
+    max.w * rw - 2 * padding,
+    max.h * rh - 2 * padding)
+end
+
 hs.hotkey.bind(mash, "Left", function()
-  movewindow(hs.window.focusedWindow(), 0, 0, 0.5, 1)
+  wm.movetoratio(hs.window.focusedWindow(), 0, 0, 0.5, 1)
 end)
 
 hs.hotkey.bind(mash, "Right", function()
-  movewindow(hs.window.focusedWindow(), 0.5, 0, 0.5, 1)
+  wm.movetoratio(hs.window.focusedWindow(), 0.5, 0, 0.5, 1)
 end)
 
 hs.hotkey.bind(mash, "Up", function()
-  movewindow(hs.window.focusedWindow(), 0, 0, 1, 0.5)
+  wm.movetoratio(hs.window.focusedWindow(), 0, 0, 1, 0.5)
 end)
 
 hs.hotkey.bind(mash, "Down", function()
-  movewindow(hs.window.focusedWindow(), 0, 0.5, 1, 0.5)
+  wm.movetoratio(hs.window.focusedWindow(), 0, 0.5, 1, 0.5)
 end)
 
 hs.hotkey.bind(mash, "Space", function()
-  movewindow(hs.window.focusedWindow(), 0, 0, 1, 1)
+  wm.movetoratio(hs.window.focusedWindow(), 0, 0, 1, 1)
 end)
 
 
