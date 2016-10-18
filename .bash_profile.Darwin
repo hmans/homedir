@@ -23,3 +23,7 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 # Initialize chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# Set locale strings, also fixes issues with Ubuntu servers
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
