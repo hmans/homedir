@@ -1,14 +1,15 @@
 #!/bin/bash
 
-# Source all files found in .bash_profile.d
-for file in .bash_profile.d/*.sh; do
-  source "$file"
-done
+function source_dir () {
+  local DIR=$1
 
-# Run OS specific profile
-FILENAME="$HOME/.bash_profile.$(uname)"
-[ -f $FILENAME ] && source $FILENAME
+  if [ -d $DIR ]; then
+    for file in $DIR/*.sh; do
+      source "$file"
+    done
+  fi
+}
 
-# Execute local .bash_profile if available
-FILENAME="$HOME/.bash_profile.local"
-[ -f $FILENAME ] && source $FILENAME
+source_dir "$HOME/.bash_profile.d"
+source_dir "$HOME/.bash_profile.$(uname).d"
+source_dir "$HOME/.bash_profile.local.d"
