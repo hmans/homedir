@@ -8,7 +8,9 @@ GREEN="\[\033[0;32m\]"
 RESET="\[\e[m\]"
 GIT_PS1_SHOWDIRTYSTATE=true
 
-export PS1=$GREEN"★ \u@\h"'$(
+HOST_ICON=${HOST_ICON:="★"}
+
+export PS1=$GREEN"\$HOST_ICON \u@\h"'$(
     if [[ $(__git_ps1) =~ \*\)$ ]]
     then echo "'$YELLOW'"$(__git_ps1 " (%s)")
     elif [[ $(__git_ps1) =~ \+\)$ ]]
