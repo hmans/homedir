@@ -1,6 +1,7 @@
 brew "wget"
 brew "htop"
 brew "git"
+brew "tig"
 brew "vim"
 brew "chruby"
 brew "ruby-install"
