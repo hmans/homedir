@@ -55,6 +55,7 @@ bindmovetoratio("1",     0,   0,   0.6, 0.6)
 bindmovetoratio("2",     0.4, 0,   0.6, 0.6)
 bindmovetoratio("3",     0.4, 0.4, 0.6, 0.6)
 bindmovetoratio("4",     0,   0.4, 0.6, 0.6)
+bindmovetoratio("5",     0.2, 0.2, 0.6, 0.6)
 
 
 ---
