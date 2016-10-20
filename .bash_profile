@@ -1,5 +1,7 @@
 #!/bin/bash
 
+shopt -s nullglob
+
 function source_dir () {
   local DIR=$1
 
