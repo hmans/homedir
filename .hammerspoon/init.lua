@@ -41,12 +41,20 @@ function bindmovetoratio(key, rx, ry, rw, rh)
   end)
 end
 
+-- Fullscreen
+bindmovetoratio("Space", 0,   0,   1,   1)
+
+-- Screen halves
 bindmovetoratio("Left",  0,   0,   0.5, 1)
 bindmovetoratio("Right", 0.5, 0,   0.5, 1)
 bindmovetoratio("Up",    0,   0,   1,   0.5)
 bindmovetoratio("Down",  0,   0.5, 1,   0.5)
-bindmovetoratio("Space", 0,   0,   1,   1)
-bindmovetoratio("Down",  0,   0.5, 1,   0.5)
+
+-- Screen corners
+bindmovetoratio("1",     0,   0,   0.7, 0.7)
+bindmovetoratio("2",     0.3, 0,   0.7, 0.7)
+bindmovetoratio("3",     0.3, 0.3, 0.7, 0.7)
+bindmovetoratio("4",     0,   0.3, 0.7, 0.7)
 
 
 ---
