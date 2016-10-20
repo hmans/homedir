@@ -35,25 +35,18 @@ function wm.movetoratio(win, rx, ry, rw, rh)
     max.h * rh - 2 * padding)
 end
 
-hs.hotkey.bind(mash, "Left", function()
-  wm.movetoratio(hs.window.focusedWindow(), 0, 0, 0.5, 1)
-end)
+function bindmovetoratio(key, rx, ry, rw, rh)
+  hs.hotkey.bind(mash, key, function()
+    wm.movetoratio(hs.window.focusedWindow(), rx, ry, rw, rh)
+  end)
+end
 
-hs.hotkey.bind(mash, "Right", function()
-  wm.movetoratio(hs.window.focusedWindow(), 0.5, 0, 0.5, 1)
-end)
-
-hs.hotkey.bind(mash, "Up", function()
-  wm.movetoratio(hs.window.focusedWindow(), 0, 0, 1, 0.5)
-end)
-
-hs.hotkey.bind(mash, "Down", function()
-  wm.movetoratio(hs.window.focusedWindow(), 0, 0.5, 1, 0.5)
-end)
-
-hs.hotkey.bind(mash, "Space", function()
-  wm.movetoratio(hs.window.focusedWindow(), 0, 0, 1, 1)
-end)
+bindmovetoratio("Left",  0,   0,   0.5, 1)
+bindmovetoratio("Right", 0.5, 0,   0.5, 1)
+bindmovetoratio("Up",    0,   0,   1,   0.5)
+bindmovetoratio("Down",  0,   0.5, 1,   0.5)
+bindmovetoratio("Space", 0,   0,   1,   1)
+bindmovetoratio("Down",  0,   0.5, 1,   0.5)
 
 
 ---
