@@ -15,3 +15,5 @@ function source_dir () {
 source_dir "$HOME/.bash_profile.d"
 source_dir "$HOME/.bash_profile.$(uname).d"
 source_dir "$HOME/.bash_profile.local.d"
+
+shopt -u nullglob
