@@ -41,21 +41,44 @@ function bindmovetoratio(key, rx, ry, rw, rh)
   end)
 end
 
+function cyclewindowposition(key, configurations)
+  local num = 0
+  local lastWin
+
+  hs.hotkey.bind(mash, key, function()
+    local win = hs.window.focusedWindow()
+
+    -- Select next configuration
+    num = num + 1
+    if num > #configurations or (lastwin and win:id() ~= win:id()) then
+      num = 1
+    end
+
+    -- Remember stuff
+    lastWin = win
+
+    -- Apply configuration
+    local c = configurations[num]
+    wm.movetoratio(win, c[1], c[2], c[3], c[4])
+  end)
+end
+
+
 -- Fullscreen
 bindmovetoratio("Space", 0,   0,   1,   1)
 
 -- Screen halves
-bindmovetoratio("Left",  0,   0,   0.5, 1)
-bindmovetoratio("Right", 0.5, 0,   0.5, 1)
-bindmovetoratio("Up",    0,   0,   1,   0.5)
-bindmovetoratio("Down",  0,   0.5, 1,   0.5)
+cyclewindowposition("Left", { {0, 0, 0.5, 1}, {0, 0, 0.65, 1}, {0, 0, 0.35, 1} })
+cyclewindowposition("Right", { {0.5, 0.0, 0.5, 1}, {0.35, 0, 0.65, 1}, {0.65, 0, 0.35, 1} })
+cyclewindowposition("Up", { {0, 0, 1, 0.5}, {0, 0, 1, 0.65}, {0, 0, 1, 0.35} })
+cyclewindowposition("Down", { {0, 0.5, 1, 0.5}, {0, 0.35, 1, 0.65}, {0, 0.65, 1, 0.35} })
 
 -- Screen corners, with slight overlap
-bindmovetoratio("1",     0,   0,   0.6, 0.6)
-bindmovetoratio("2",     0.4, 0,   0.6, 0.6)
-bindmovetoratio("3",     0.4, 0.4, 0.6, 0.6)
-bindmovetoratio("4",     0,   0.4, 0.6, 0.6)
-bindmovetoratio("5",     0.2, 0.2, 0.6, 0.6)
+cyclewindowposition("1", { {0, 0, 0.6, 0.6}, {0, 0, 0.8, 0.8} })
+cyclewindowposition("2", { {0.4, 0, 0.6, 0.6}, {0.2, 0, 0.8, 0.8} })
+cyclewindowposition("3", { {0.4, 0.4, 0.6, 0.6}, {0.2, 0.2, 0.8, 0.8} })
+cyclewindowposition("4", { {0, 0.4, 0.6, 0.6}, {0, 0.2, 0.8, 0.8} })
+cyclewindowposition("5", { { 0.2, 0.2, 0.6, 0.6 }, { 0.1, 0.1, 0.8, 0.8 } })
 
 
 ---
