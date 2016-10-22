@@ -78,11 +78,33 @@ end
 
 
 ---
---- Reloading
+--- Manual Reloading
 ---
 
 hs.hotkey.bind(mash, "R", function()
   hs.reload()
 end)
 
+
+---
+--- Automatic Reloading
+---
+
+function reloadConfig(files)
+  doReload = false
+
+  for _,file in pairs(files) do
+    if file:sub(-4) == ".lua" then
+      doReload = true
+    end
+  end
+
+  if doReload then
+    hs.reload()
+  end
+end
+
+local myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+
+-- Notify user that configuration has been loaded
 hs.alert.show("Config loaded")
