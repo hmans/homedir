@@ -1,13 +1,13 @@
 #!/bin/bash
 
-shopt -s nullglob
-
 function source_dir () {
   local DIR=$1
 
   if [ -d $DIR ]; then
     for file in $DIR/*.sh; do
-      source "$file"
+      if [ -f "$file" ]; then
+        source "$file"
+      fi
     done
   fi
 }
@@ -15,5 +15,3 @@ function source_dir () {
 source_dir "$HOME/.bash_profile.d"
 source_dir "$HOME/.bash_profile.$(uname).d"
 source_dir "$HOME/.bash_profile.local.d"
-
-shopt -u nullglob
