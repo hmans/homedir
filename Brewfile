@@ -11,6 +11,9 @@ brew "tmux"
 brew "bash"
 brew "bash-completion"
 tap "homebrew/completions"
+
+# Cask'd Mac apps and stuff
+cask "google-chrome"
 cask "caskroom/fonts/font-hack"
 
 # Mac App Store apps
