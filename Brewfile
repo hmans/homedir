@@ -16,6 +16,10 @@ tap "homebrew/completions"
 # Cask'd Mac apps and stuff
 cask "google-chrome"
 cask "caskroom/fonts/font-hack"
+cask "caskroom/fonts/font-fira-mono"
+cask "caskroom/fonts/font-fira-sans"
+cask "caskroom/fonts/font-fira-code"
+cask "caskroom/fonts/font-office-code-pro"
 
 # Mac App Store apps
 mas "Pocket", id: 568494494
