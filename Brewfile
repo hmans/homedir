@@ -12,6 +12,7 @@ brew "tmux"
 brew "bash"
 brew "bash-completion"
 tap "homebrew/completions"
+brew "homebrew/completions/mix-completion"
 
 # Cask'd Mac apps and stuff
 cask "google-chrome"
