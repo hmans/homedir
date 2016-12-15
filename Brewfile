@@ -11,6 +11,7 @@ brew "heroku"
 brew "tmux"
 brew "bash"
 brew "bash-completion"
+brew "imagemagick"
 tap "homebrew/completions"
 brew "homebrew/completions/mix-completion"
 
