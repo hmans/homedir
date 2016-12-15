@@ -21,6 +21,7 @@ cask "caskroom/fonts/font-fira-mono"
 cask "caskroom/fonts/font-fira-sans"
 cask "caskroom/fonts/font-fira-code"
 cask "caskroom/fonts/font-office-code-pro"
+cask "caskroom/fonts/font-source-code-pro"
 
 # Mac App Store apps
 mas "Pocket", id: 568494494
