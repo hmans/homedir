@@ -105,6 +105,10 @@ hs.hotkey.bind({"cmd", "alt"}, "forwarddelete", function()
   hs.caffeinate.systemSleep()
 end)
 
+-- Hotkey help
+hs.hotkey.showHotkeys(mash, "H")
+
+
 ---
 --- Manual Reloading
 ---
