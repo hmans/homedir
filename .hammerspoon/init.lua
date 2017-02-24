@@ -100,6 +100,11 @@ if caffeine then
 end
 
 
+-- System Sleep
+hs.hotkey.bind({"cmd", "alt"}, "forwarddelete", function()
+  hs.caffeinate.systemSleep()
+end)
+
 ---
 --- Manual Reloading
 ---
