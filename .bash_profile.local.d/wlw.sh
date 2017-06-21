@@ -1,7 +1,11 @@
 # WLW specific aliases
-alias doco="docker-compose -f /Users/mans/src/docker-compose/docker-compose.yml"
-alias de="dexec"
 
+# shortcut for docker-compose
+function doco {
+  docker-compose -f /Users/mans/src/docker-compose/docker-compose.yml $@
+}
+
+# shortcut to run a command within a project's container
 function dexec {
   APP=${PWD##*/}
   CMD="doco exec $APP $@"
@@ -11,3 +15,5 @@ function dexec {
   echo "🚀  Launching into '$APP'."
   eval $CMD
 }
+
+alias de="dexec"
