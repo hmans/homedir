@@ -10,7 +10,7 @@ function dexec {
   APP=${PWD##*/}
   CMD="doco exec $APP $@"
 
-  fortune | cowsay
+  fortune | cowsay -W 50
   echo ""
   echo "🚀  Launching into '$APP'."
   eval $CMD
