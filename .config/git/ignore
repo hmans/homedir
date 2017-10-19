@@ -2,7 +2,7 @@
 # To make edits, delete these initial comments, or else your changes may be lost!
 
 # General
-*.DS_Store
+.DS_Store
 .AppleDouble
 .LSOverride
 
