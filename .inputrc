@@ -18,3 +18,10 @@ $if Bash
     # do history expansion when [Space] entered
     Space:  magic-space
 $endif
+
+
+# VI style bash editing
+set editing-mode vi
+# set keymap vi-command
+set show-mode-in-prompt on
+
