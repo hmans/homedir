@@ -14,6 +14,7 @@ brew "bash-completion"
 brew "imagemagick"
 tap "homebrew/completions"
 brew "homebrew/completions/mix-completion"
+brew "fzf"
 
 # Cask'd Mac apps and stuff
 cask "google-chrome"
