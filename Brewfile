@@ -36,3 +36,4 @@ mas "Textual", id: 896450579
 mas "Telegram", id: 747648890
 mas "DaisyDisk", id: 411643860
 mas "Numbers", id: 409203825
+mas "Todoist", id: 585829637
