@@ -8,8 +8,8 @@ set         show-all-if-ambiguous           on
  
  
 # search partial matches in history using [Esc]+[P], +[N] and arrow keys
-"\ep":      history-search-backward
-"\en":      history-search-forward
+# "\ep":      history-search-backward
+# "\en":      history-search-forward
 "\e[A":     history-search-backward
 "\e[B":     history-search-forward
  
@@ -21,7 +21,7 @@ $endif
 
 
 # VI style bash editing
-set editing-mode vi
+# set editing-mode vi
 # set keymap vi-command
-set show-mode-in-prompt on
+# set show-mode-in-prompt on
 
