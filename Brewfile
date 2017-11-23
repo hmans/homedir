@@ -20,7 +20,7 @@ brew "elixir"
 brew "mix-completion"
 
 # Cask'd Mac apps and stuff
-cask "google-chrome"
+# cask "google-chrome"
 cask "atom"
 cask "visual-studio-code"
 cask "caskroom/fonts/font-hack"
