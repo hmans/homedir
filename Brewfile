@@ -44,3 +44,4 @@ mas "Telegram", id: 747648890
 mas "DaisyDisk", id: 411643860
 mas "Numbers", id: 409203825
 mas "Todoist", id: 585829637
+mas "Soulver", id: 413965349
