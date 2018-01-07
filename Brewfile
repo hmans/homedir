@@ -20,6 +20,7 @@ brew "fzf"
 brew "elixir"
 brew "mix-completion"
 brew "phantomjs"
+brew "openssl"
 
 # Cask'd Mac apps and stuff
 # cask "google-chrome"
