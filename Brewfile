@@ -42,6 +42,7 @@ cask "brogue"
 
 # Mac App Store apps
 mas "Pocket", id: 568494494
+mas "Reeder 3", id: 880001334
 mas "Twitter", id: 409789998
 mas "Evernote", id: 406056744
 mas "1Password", id: 443987910
