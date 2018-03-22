@@ -27,6 +27,9 @@ brew "openssl"
 # Game Development
 brew "godot"
 
+# Business Tools
+mas "Harvest", id: 506189836
+
 # Cask'd Mac apps and stuff
 # cask "google-chrome"
 cask "atom"
