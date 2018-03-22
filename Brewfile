@@ -24,6 +24,9 @@ brew "mix-completion"
 brew "phantomjs"
 brew "openssl"
 
+# Game Development
+brew "godot"
+
 # Cask'd Mac apps and stuff
 # cask "google-chrome"
 cask "atom"
