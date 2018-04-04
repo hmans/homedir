@@ -1,0 +1,22 @@
+#!/bin/sh
+set -x
+apm install busy-signal
+apm install color-picker
+apm install crystal-slang
+apm install editorconfig
+apm install file-icons
+apm install hey-pane
+apm install intentions
+apm install language-crystal-actual
+apm install language-docker
+apm install language-elixir
+apm install language-fish-shell
+apm install language-pug
+apm install language-slim
+apm install language-vue
+apm install linter
+apm install linter-rubocop
+apm install linter-ui-default
+apm install prettier-atom
+apm install summerfruit-theme
+apm install toggle-quotes
