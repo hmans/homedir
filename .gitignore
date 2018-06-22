@@ -5,3 +5,6 @@
 .config/*
 !.config/fish/
 .config/fish/fishd.*
+
+# Ignore fish prompt, since OMF will make it a symlink
+.config/fish/functions/fish_prompt.fish
