@@ -60,3 +60,4 @@ mas "DaisyDisk", id: 411643860
 mas "Numbers", id: 409203825
 mas "Todoist", id: 585829637
 mas "Soulver", id: 413965349
+mas "Paste 2", id: 967805235
