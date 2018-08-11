@@ -16,7 +16,6 @@ brew "bash-completion"
 brew "fish"
 brew "chruby-fish"
 brew "pgcli"
-tap "homebrew/completions"
 brew "fzf"
 brew "elixir"
 brew "mix-completion"
@@ -50,14 +49,10 @@ cask "brogue"
 # Mac App Store apps
 mas "Pocket", id: 568494494
 mas "Reeder 3", id: 880001334
-mas "Twitter", id: 409789998
 mas "Evernote", id: 406056744
-mas "1Password", id: 443987910
+mas "1Password 7", id: 1333542190
 mas "Slack", id: 803453959
-mas "Textual", id: 896450579
 mas "Telegram", id: 747648890
 mas "DaisyDisk", id: 411643860
 mas "Numbers", id: 409203825
-mas "Todoist", id: 585829637
 mas "Soulver", id: 413965349
-mas "Paste 2", id: 967805235
