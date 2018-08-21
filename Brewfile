@@ -24,9 +24,6 @@ brew "openssl"
 # Game Development
 # brew "godot"
 
-# Business Tools
-mas "Harvest", id: 506189836
-
 # Cask'd Mac apps and stuff
 # cask "google-chrome"
 cask "atom"
@@ -48,6 +45,7 @@ cask "caskroom/fonts/font-source-code-pro"
 cask "brogue"
 
 # Mac App Store apps
+mas "Harvest", id: 506189836
 mas "Pocket", id: 568494494
 mas "Reeder 3", id: 880001334
 mas "Evernote", id: 406056744
@@ -57,3 +55,5 @@ mas "Telegram", id: 747648890
 mas "DaisyDisk", id: 411643860
 mas "Numbers", id: 409203825
 mas "Soulver", id: 413965349
+mas "Magnet", id: 441258766
+mas "Todoist", id: 585829637
