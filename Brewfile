@@ -1,3 +1,5 @@
+brew "awscli"
+brew "awsebcli"
 brew "ruby", args: ["with-doc"]
 brew "wget"
 brew "htop"
