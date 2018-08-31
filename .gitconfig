@@ -45,7 +45,7 @@
 #
 [core]
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	editor = /usr/bin/vim
+  editor = /usr/bin/vim
 
 # Useful aliases
 #
@@ -56,10 +56,14 @@
   co = checkout
   df = diff
   dc = diff --cached
-	lol = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lol = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   ls = ls-files
-	springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
+  springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
 
+[pager]
+  diff = diff-so-fancy | less --tabs=1,5 -RFX
+  show = diff-so-fancy | less --tabs=1,5 -RFX
+       
 [mergetool]
 	keepBackup = true
 
