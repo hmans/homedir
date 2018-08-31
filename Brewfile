@@ -2,6 +2,7 @@ brew "awscli"
 brew "awsebcli"
 brew "ruby", args: ["with-doc"]
 brew "wget"
+brew "bat"
 brew "htop"
 brew "git"
 brew "tig"
