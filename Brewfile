@@ -54,6 +54,7 @@ cask "caskroom/fonts/font-pt-mono"
 cask "caskroom/fonts/font-office-code-pro"
 cask "caskroom/fonts/font-source-code-pro"
 cask "brogue"
+cask "tunnelblick"
 
 # Mac App Store apps
 mas "Harvest", id: 506189836
