@@ -29,6 +29,9 @@ brew "elixir"
 brew "mix-completion"
 brew "openssl"
 
+# Inspect Docker images
+brew "wagoodman/dive/dive"
+
 # Game Development
 # brew "godot"
 
