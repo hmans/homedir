@@ -70,3 +70,4 @@ mas "Soulver", id: 413965349
 mas "Magnet", id: 441258766
 mas "Todoist", id: 585829637
 mas "Theine 2", id: 955848755
+mas "CCMenu", id: 603117688
