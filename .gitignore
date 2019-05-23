@@ -4,4 +4,7 @@
 # Ignore fish prompt, since OMF will make it a symlink
 .config/fish/functions/fish_prompt.fish
 
+.config/karabiner/*
+!.config/karabiner/karabiner.json
+
 .DS_Store
