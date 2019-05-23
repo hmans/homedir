@@ -1,10 +1,7 @@
 .vim/*
 .bash_profile.local.d/*
 
-# Ignore everything in .config except for our fish configuration
-.config/*
-!.config/fish/
-.config/fish/fishd.*
-
 # Ignore fish prompt, since OMF will make it a symlink
 .config/fish/functions/fish_prompt.fish
+
+.DS_Store
