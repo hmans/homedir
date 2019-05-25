@@ -120,6 +120,86 @@
                 "to": {
                   "key_code": "right_arrow"
                 }
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "u",
+                  "modifiers": {
+                    "mandatory": [],
+                    "optional": ["any"]
+                  }
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "page_up"
+                }
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "p",
+                  "modifiers": {
+                    "mandatory": [],
+                    "optional": ["any"]
+                  }
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "page_down"
+                }
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "i",
+                  "modifiers": {
+                    "mandatory": [],
+                    "optional": ["any"]
+                  }
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "home"
+                }
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "o",
+                  "modifiers": {
+                    "mandatory": [],
+                    "optional": ["any"]
+                  }
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "end"
+                }
               }
             ]
           }
