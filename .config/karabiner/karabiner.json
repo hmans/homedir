@@ -202,6 +202,91 @@
                 }
               }
             ]
+          },
+          {
+            "description": "hmans' RK61 Cursor Keys with Hyper",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "application",
+                  "modifiers": {
+                    "mandatory": [],
+                    "optional": ["any"]
+                  }
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "down_arrow"
+                }
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "slash",
+                  "modifiers": {
+                    "mandatory": [],
+                    "optional": ["any"]
+                  }
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "up_arrow"
+                }
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "right_alt",
+                  "modifiers": {
+                    "mandatory": [],
+                    "optional": ["any"]
+                  }
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "left_arrow"
+                }
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "right_control",
+                  "modifiers": {
+                    "mandatory": [],
+                    "optional": ["any"]
+                  }
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "right_arrow"
+                }
+              }
+            ]
           }
         ]
       },
