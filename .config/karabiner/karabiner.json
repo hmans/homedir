@@ -326,6 +326,28 @@
                 }
               }
             ]
+          },
+          {
+            "description": "hmans' Hyper Window Management",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "escape"
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "grave_accent_and_tilde",
+                  "modifiers": ["left_command"]
+                }
+              }
+            ]
           }
         ]
       },
