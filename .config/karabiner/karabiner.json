@@ -287,6 +287,45 @@
                 }
               }
             ]
+          },
+          {
+            "description": "hmans' Hyper Bash",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "c"
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "c",
+                  "modifiers": ["left_control"]
+                }
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "d"
+                },
+                "conditions": [
+                  {
+                    "name": "hyper_active",
+                    "type": "variable_if",
+                    "value": 1
+                  }
+                ],
+                "to": {
+                  "key_code": "d",
+                  "modifiers": ["left_control"]
+                }
+              }
+            ]
           }
         ]
       },
