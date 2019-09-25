@@ -32,6 +32,9 @@ brew "openssl"
 # Inspect Docker images
 brew "wagoodman/dive/dive"
 
+# Navi - https://github.com/denisidoro/navi
+brew "denisidoro/tools/navi"
+
 # Game Development
 # brew "godot"
 
