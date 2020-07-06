@@ -710,6 +710,12 @@
         "options": {
           "full_name": "eurkey"
         }
+      },
+      "google-backup-and-sync": {
+        "version": "latest",
+        "options": {
+          "full_name": "google-backup-and-sync"
+        }
       }
     },
     "mas": {
