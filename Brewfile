@@ -29,6 +29,9 @@ brew "broot"   # Directory tree explorer
 brew "terminal-notifier"
 brew "exa"
 
+# .NET Core SDK
+cask "dotnet-sdk"
+
 # Inspect Docker images
 tap "wagoodman/dive"
 brew "dive"

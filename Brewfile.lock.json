@@ -737,6 +737,12 @@
         "options": {
           "full_name": "google-backup-and-sync"
         }
+      },
+      "dotnet-sdk": {
+        "version": "3.1.301,aad9adc7-90bb-4294-a378-00f4cc5fb695:89cfc771a783b1441c34ac925aee7141",
+        "options": {
+          "full_name": "dotnet-sdk"
+        }
       }
     },
     "mas": {
