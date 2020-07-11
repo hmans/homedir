@@ -54,6 +54,7 @@ cask "spotify"
 cask "alfred"
 cask "google-backup-and-sync"
 cask "hammerspoon"
+cask "joshjon-nocturnal" # Night Shift & Brightness control
 cask "homebrew/cask-fonts/font-hack"
 cask "homebrew/cask-fonts/font-cascadia"
 cask "homebrew/cask-fonts/font-cascadia-mono"
