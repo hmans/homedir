@@ -15,6 +15,10 @@
 [push]
   default = current
 
+# Rebase when pulling
+[pull]
+	rebase = true
+
 # Include a summary of changes in merge commit messages.
 #
 [merge]
