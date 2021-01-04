@@ -1,8 +1,8 @@
 # User information. Replace with your own data, obviously.
 #
 [user]
-  name = Hendrik Mans
-  email = hendrik@mans.de
+	name = Hendrik Mans
+	email = hendrik@mans.de
 
 # Automatically track branches with the same name
 #
@@ -83,3 +83,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[init]
+	defaultBranch = main
