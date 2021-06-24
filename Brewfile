@@ -51,9 +51,10 @@ cask "visual-studio-code"
 cask "github"
 cask "spotify"
 cask "alfred"
+cask "rectangle"
+cask "raycast"
 cask "google-backup-and-sync"
 cask "hammerspoon"
-cask "joshjon-nocturnal" # Night Shift & Brightness control
 cask "homebrew/cask-fonts/font-hack"
 cask "homebrew/cask-fonts/font-cascadia-code"
 cask "homebrew/cask-fonts/font-cascadia-mono"
@@ -70,14 +71,10 @@ cask "homebrew/cask-fonts/font-office-code-pro"
 cask "homebrew/cask-fonts/font-source-code-pro"
 cask "homebrew/cask-fonts/font-jetbrains-mono"
 cask "homebrew/cask-fonts/font-jetbrains-mono-nerd-font"
-cask "tunnelblick"
 cask "eurkey"
 cask "discord"
 
 # Mac App Store apps
-mas "Harvest", id: 506189836
-mas "Pocket", id: 568494494
-mas "Reeder 3", id: 880001334
 mas "Evernote", id: 406056744
 mas "1Password 7", id: 1333542190
 mas "Slack", id: 803453959
@@ -85,7 +82,4 @@ mas "Telegram", id: 747648890
 mas "DaisyDisk", id: 411643860
 mas "Numbers", id: 409203825
 mas "Soulver", id: 413965349
-mas "Magnet", id: 441258766
-mas "Todoist", id: 585829637
-mas "Theine 2", id: 955848755
 mas "CCMenu", id: 603117688
