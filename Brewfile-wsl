@@ -4,6 +4,9 @@ brew "fish"
 # Starship prompt
 brew "starship"
 
+# Build tools
+brew "gcc"
+
 # Git
 brew "git"
 
