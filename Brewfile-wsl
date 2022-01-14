@@ -1,6 +1,9 @@
 # Fish shell
 brew "fish"
 
+# Starship prompt
+brew "starship"
+
 # Git
 brew "git"
 
