@@ -1,0 +1,10 @@
+# Fish shell
+brew "fish"
+
+# Git
+brew "git"
+
+# Ruby
+brew "chruby"
+brew "chruby-fish"
+brew "ruby-install"
