@@ -25,3 +25,10 @@ end
 
 # alias xing-rest-preview "oly run command -d ams1 -n people -a network-api -e preview -- curl \"http://rest.api.preview.ams1.xing.com/rest/profiles/profiles/3?rid=3&fields=id\""
 # alias xing-rest-production "oly run command -d ams1 -n people -a network-api -e production -- curl \"http://rest.api.ams1.xing.com/rest/profiles/profiles/3?rid=3&fields=id\""
+
+# Upload Gems to gems.xing.com
+function upload_xing_gem
+  set gem_file $argv
+  echo "uploading $gem_file"
+  curl -F file={$gem_file} http://gems.xing.com/upload
+end
