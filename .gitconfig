@@ -8,7 +8,7 @@
 #
 [branch]
   autosetupmerge = true
-  autosetuprebase = always
+  # autosetuprebase = always
 
 # Push the current branch as the default behaviour
 #
@@ -16,8 +16,8 @@
   default = current
 
 # Rebase when pulling
-[pull]
-	rebase = true
+# [pull]
+# 	rebase = true
 
 # Include a summary of changes in merge commit messages.
 #
@@ -67,7 +67,7 @@
 [pager]
   diff = diff-so-fancy | less --tabs=1,5 -RFX
   show = diff-so-fancy | less --tabs=1,5 -RFX
-       
+
 [mergetool]
 	keepBackup = true
 
