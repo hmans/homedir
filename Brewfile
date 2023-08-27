@@ -45,7 +45,8 @@ brew "navi"
 # brew "godot"
 
 # Cask'd Mac apps and stuff
-# cask "google-chrome"
+cask "google-chrome"
+cask "docker"
 cask "shottr"
 cask "iterm2"
 cask "visual-studio-code"
