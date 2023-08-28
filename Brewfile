@@ -1,5 +1,6 @@
 brew "ruby"
 brew "wget"
+brew "htop"
 brew "bat"
 brew "prettyping"
 brew "diff-so-fancy"
